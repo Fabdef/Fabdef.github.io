@@ -9,18 +9,21 @@ author:
   name             : "Fabien Defrance"
   avatar           : "profile.png"
   bio              : "Research Scientist - Quantum Sensing, Superconducting Devices, THz Instrumentation"
-  location         : "Pasadena, CA / Barcelona, ES"
-  email            : "fdefranc@caltech.edu"
+  location         : "Barcelona, Spain"
+  email            : "fabien.defrance@icn2.cat"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:fdefranc@caltech.edu"
+      url: "mailto:fabien.defrance@icn2.cat"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/your-linkedin-handle"
+      url: "https://www.linkedin.com/in/fabien-defrance-24778028"
     - label: "Google Scholar"
       icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=your-scholar-id"
+      url: "https://scholar.google.com/citations?user=iGsbyiEAAAAJ&hl=en"
+    - label: "ORCID"
+      icon: "fab fa-fw fa-orcid"
+      url: "https://orcid.org/0000-0002-3746-5296"
 
 defaults:
   - scope:
