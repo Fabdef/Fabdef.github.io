@@ -1,10 +1,6 @@
 ---
 ---
 
-/*
- * This file controls what is imported from /_sass
- */
-
 @import
     "vendor/breakpoint/breakpoint",
 
@@ -36,88 +32,73 @@
 ;
 
 /* ===================================================
-   Custom overrides below - safe from theme updates
-   Fixed px values only.
+   Custom overrides - !important used deliberately.
+   The theme's compiled SCSS uses nested selectors that
+   produce higher specificity than plain class overrides
+   (documented, acknowledged issue in mmistakes/minimal-mistakes
+   #2852), so without !important these rules are silently
+   outranked regardless of file order.
    =================================================== */
 
-/* 1. Publication/talk titles - and margin-top explicitly zeroed:
-      this was the actual source of the persistent gap above each
-      entry - the theme's default h2 top margin (~13-16px) was never
-      overridden before now, only margin-bottom was. */
 .archive__item-title {
-  font-size: 10.5px;
-  margin-top: 0;
-  margin-bottom: 1px;
+  font-size: 7.4px !important;
+  margin-top: 0 !important;
+  margin-bottom: 1px !important;
 }
 
-/* 2. Venue/journal line - now appears INLINE after authors (see
-      archive-single.html change), not as its own paragraph */
-.archive__item-venue {
-  font-size: 8px;
-}
-
-/* 2b. Author + venue combined line */
 .archive__item-authors {
-  font-size: 9px;
-  color: #444;
-  margin-top: 0;
-  margin-bottom: 1px;
+  font-size: 6.3px !important;
+  color: #444 !important;
+  margin-top: 0 !important;
+  margin-bottom: 1px !important;
 }
 
-/* 3. Citation/excerpt text under each entry */
 .archive__item-excerpt {
-  font-size: 9px;
-  line-height: 1.25;
-  margin-top: 1px;
+  font-size: 6.3px !important;
+  line-height: 1.2 !important;
+  margin-top: 1px !important;
 }
 
-/* 4. Spacing between consecutive entries - top spacing essentially removed */
 .archive__item {
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 6px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #eaeaea;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 6px !important;
+  padding-bottom: 5px !important;
+  border-bottom: 1px solid #eaeaea !important;
 }
 
-/* 4b. Reset ALL paragraphs inside an archive entry - the theme's own
-       bare <p> tags (no class) otherwise carry default browser margins */
 .archive__item p {
-  margin-top: 1px;
-  margin-bottom: 1px;
-  font-size: 9px;
+  margin-top: 1px !important;
+  margin-bottom: 1px !important;
+  font-size: 6.3px !important;
 }
 
-/* 5. Sidebar bio */
 .author__bio {
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
 }
 
-/* 5b. Fix sidebar text being cut off (institution name, location).
-       Cover both the <li> AND the <a> inside it, since the theme's
-       own link styling may set white-space:nowrap on the anchor
-       itself for icon alignment, which the previous fix missed. */
+.author__urls-wrapper,
+.author__urls-wrapper .author__urls,
 .author__urls-wrapper .author__urls li,
 .author__urls-wrapper .author__urls li.author__desktop,
 .author__urls-wrapper .author__urls li a {
-  white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  overflow: visible;
-  text-overflow: unset;
-  display: inline;
+  white-space: normal !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+  word-break: break-word !important;
+  overflow: visible !important;
+  text-overflow: unset !important;
+  max-width: 100% !important;
+  width: auto !important;
 }
 
-/* 6. Overall body text */
 .page__content p,
 .page__content li {
   font-size: 15px;
   line-height: 1.6;
 }
 
-/* 7. CV page section headers */
 .page__content h2 {
   font-size: 20px;
   border-bottom: 1px solid #ddd;
