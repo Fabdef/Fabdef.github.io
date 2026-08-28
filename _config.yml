@@ -4,7 +4,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "air" # choose among: default, air, sunrise, mint, dirt, contrast.
+site_theme               : "default" # choose among: default, air, sunrise, mint, dirt, contrast.
 title                    : "Fabien Defrance"
 title_separator          : "-"
 name                     : &name "Fabien Defrance"
