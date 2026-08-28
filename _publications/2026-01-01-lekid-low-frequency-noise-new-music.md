@@ -2,7 +2,7 @@
 title: "Low-Frequency Noise Performance of Microstrip-Coupled Lumped-Element Aluminum KIDs using Hydrogenated Amorphous Silicon Parallel-Plate Capacitors for NEW-MUSIC"
 collection: publications
 permalink: /publication/2025-lekid-low-frequency-noise-new-music
-date: 2025-11-12
+date: 2026-01-01
 venue: 'IEEE Transactions on Applied Superconductivity'
 link: 'https://doi.org/10.1109/TASC.2026.3682742'
 arxivurl: 'https://arxiv.org/abs/2511.08898'
