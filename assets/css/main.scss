@@ -36,12 +36,58 @@
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv"
-  
 ;
 
-/* Custom overrides below - safe from theme updates */
- 
+/* ===================================================
+   Custom overrides below - safe from theme updates
+   =================================================== */
+
+/* 1. Publication/talk titles: smaller, less blog-like */
 .archive__item-title {
   font-size: 1.1em;
   margin-bottom: 0.3em;
+}
+
+/* 2. Venue/date line under each title: smaller, muted */
+.page__meta {
+  font-size: 0.85em;
+  color: #6b6b6b;
+  margin-top: 0.1em;
+  margin-bottom: 0.3em;
+}
+
+/* 3. Citation/excerpt text under each entry: tighter line spacing */
+.archive__item-excerpt {
+  font-size: 0.95em;
+  line-height: 1.4;
+  margin-top: 0.2em;
+}
+
+/* 4. Reduce spacing between consecutive publication/talk entries */
+.archive__item {
+  margin-bottom: 1.2em;
+  padding-bottom: 0.8em;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* 5. Sidebar bio: smaller and slightly condensed, less "blog author card" */
+.author__bio {
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+/* 6. Overall body text: slightly smaller for a denser, less casual feel */
+.page__content p,
+.page__content li {
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+/* 7. CV page section headers (Education, Work experience, etc.):
+      smaller than default h2, with a thin rule for structure */
+.page__content h2 {
+  font-size: 1.3em;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.2em;
+  margin-top: 1.5em;
 }
