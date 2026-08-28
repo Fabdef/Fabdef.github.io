@@ -49,15 +49,19 @@
   margin-bottom: 3px !important;
 }
 
+.archive__item-title a {
+  text-decoration: none !important;
+}
+
 .archive__item-authors {
-  font-size: 14px !important;
+  font-size: 16px !important;
   margin-top: 0 !important;
   margin-bottom: 3px !important;
   opacity: 0.85;
 }
 
 .archive__item-excerpt {
-  font-size: 14px !important;
+  font-size: 13px !important;
   line-height: 1.4 !important;
   margin-top: 3px !important;
 }
