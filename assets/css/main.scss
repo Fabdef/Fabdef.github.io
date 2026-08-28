@@ -69,6 +69,23 @@
   border-bottom: 1px solid rgba(255,255,255,0.15) !important;
 }
 
+/* The actual outer wrapper around each entry is a SEPARATE element,
+   <div class="list__item">, wrapping the <article class="archive__item">
+   inside it (confirmed against the real theme source). Every previous
+   round only targeted archive__item - the inner element - and never
+   this outer one, which is very likely where the visible gap between
+   entries actually comes from. */
+.list__item {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.archive {
+  gap: 0 !important;
+}
+
 .archive__item p {
   margin-top: 3px !important;
   margin-bottom: 3px !important;
