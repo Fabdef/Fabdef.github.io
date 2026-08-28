@@ -40,22 +40,22 @@
     {% endif %}
 
     {% comment %}
-      Custom simplified citation block:
-      - Author list appears BEFORE the venue/journal line
-      - No "Recommended citation:" prefix, just the citation text itself
-      - No "Download Paper" link (title already links to the journal article via post.link)
-      - Only shows an "arXiv" fallback link if post.arxivurl is set
+      Custom combined line: authors + journal name together, no separate
+      "Published in" paragraph. Only "Submitted to" appears, and only
+      when post.status == 'submitted' - otherwise no prefix word at all,
+      matching normal academic citation convention (publication is assumed).
     {% endcomment %}
-    {% if post.citation %}
-      <p class="archive__item-authors">{{ post.citation }}</p>
-    {% endif %}
-
-    {% if post.collection == 'teaching' %}
+    {% if post.collection == 'publications' %}
+      <p class="archive__item-authors">
+        {% if post.citation %}{{ post.citation }}{% endif %}
+        {% if post.status == 'submitted' %}
+          Submitted to <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
+        {% else %}
+          <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }}.
+        {% endif %}
+      </p>
+    {% elsif post.collection == 'teaching' %}
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% elsif post.collection == 'publications' and post.status == 'submitted' %}
-      <p>Submitted to <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% elsif post.collection == 'publications' %}
-      <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.date %}
       <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
     {% endif %}

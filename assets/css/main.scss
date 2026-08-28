@@ -3,9 +3,6 @@
 
 /*
  * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
@@ -40,63 +37,90 @@
 
 /* ===================================================
    Custom overrides below - safe from theme updates
+   Fixed px values only.
    =================================================== */
 
-/* 1. Publication/talk titles: smaller, less blog-like */
+/* 1. Publication/talk titles - and margin-top explicitly zeroed:
+      this was the actual source of the persistent gap above each
+      entry - the theme's default h2 top margin (~13-16px) was never
+      overridden before now, only margin-bottom was. */
 .archive__item-title {
-  font-size: 1.1em;
-  margin-bottom: 0.3em;
+  font-size: 10.5px;
+  margin-top: 0;
+  margin-bottom: 1px;
 }
 
-/* 2. Venue/date line under each title: smaller, muted */
-.page__meta {
-  font-size: 0.85em;
-  color: #6b6b6b;
-  margin-top: 0.1em;
-  margin-bottom: 0.3em;
+/* 2. Venue/journal line - now appears INLINE after authors (see
+      archive-single.html change), not as its own paragraph */
+.archive__item-venue {
+  font-size: 8px;
 }
 
-/* 3. Citation/excerpt text under each entry: tighter line spacing */
+/* 2b. Author + venue combined line */
+.archive__item-authors {
+  font-size: 9px;
+  color: #444;
+  margin-top: 0;
+  margin-bottom: 1px;
+}
+
+/* 3. Citation/excerpt text under each entry */
 .archive__item-excerpt {
-  font-size: 0.95em;
-  line-height: 1.4;
-  margin-top: 0.2em;
+  font-size: 9px;
+  line-height: 1.25;
+  margin-top: 1px;
 }
 
-/* 4. Reduce spacing between consecutive publication/talk entries */
+/* 4. Spacing between consecutive entries - top spacing essentially removed */
 .archive__item {
-  margin-bottom: 1.2em;
-  padding-bottom: 0.8em;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 6px;
+  padding-bottom: 5px;
   border-bottom: 1px solid #eaeaea;
 }
 
-/* 4b. Catch-all: the venue/date line in archive-single.html is a BARE <p> tag
-       with no class, so it inherits default browser/theme paragraph margins
-       (~1em top+bottom) untouched by any class-based rule above. Reset all
-       paragraphs inside an archive entry directly. */
+/* 4b. Reset ALL paragraphs inside an archive entry - the theme's own
+       bare <p> tags (no class) otherwise carry default browser margins */
 .archive__item p {
-  margin-top: 0.15em;
-  margin-bottom: 0.15em;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  font-size: 9px;
 }
 
-/* 5. Sidebar bio: smaller and slightly condensed, less "blog author card" */
+/* 5. Sidebar bio */
 .author__bio {
-  font-size: 0.9em;
+  font-size: 14px;
   line-height: 1.4;
 }
 
-/* 6. Overall body text: slightly smaller for a denser, less casual feel */
+/* 5b. Fix sidebar text being cut off (institution name, location).
+       Cover both the <li> AND the <a> inside it, since the theme's
+       own link styling may set white-space:nowrap on the anchor
+       itself for icon alignment, which the previous fix missed. */
+.author__urls-wrapper .author__urls li,
+.author__urls-wrapper .author__urls li.author__desktop,
+.author__urls-wrapper .author__urls li a {
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  overflow: visible;
+  text-overflow: unset;
+  display: inline;
+}
+
+/* 6. Overall body text */
 .page__content p,
 .page__content li {
-  font-size: 0.95em;
+  font-size: 15px;
   line-height: 1.6;
 }
 
-/* 7. CV page section headers (Education, Work experience, etc.):
-      smaller than default h2, with a thin rule for structure */
+/* 7. CV page section headers */
 .page__content h2 {
-  font-size: 1.3em;
+  font-size: 20px;
   border-bottom: 1px solid #ddd;
-  padding-bottom: 0.2em;
-  margin-top: 1.5em;
+  padding-bottom: 4px;
+  margin-top: 24px;
 }
