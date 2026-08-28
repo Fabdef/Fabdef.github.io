@@ -110,6 +110,18 @@
   display: list-item !important;
 }
 
+/* Keep icon + text inline on the same row for both employer and
+   location lines, regardless of text length or screen width */
+.author__urls-wrapper .author__urls li.author__desktop {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 6px;
+}
+.author__urls-wrapper .author__urls li.author__desktop i {
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
 .page__content p,
 .page__content li {
   font-size: 15px;

@@ -88,7 +88,7 @@ comments:
   provider               :
 
 atom_feed:
-  hide                  : false
+  hide                  : true
   path                  :
 
 # SEO Related
