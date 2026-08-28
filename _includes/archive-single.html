@@ -39,6 +39,17 @@
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
+    {% comment %}
+      Custom simplified citation block:
+      - Author list appears BEFORE the venue/journal line
+      - No "Recommended citation:" prefix, just the citation text itself
+      - No "Download Paper" link (title already links to the journal article via post.link)
+      - Only shows an "arXiv" fallback link if post.arxivurl is set
+    {% endcomment %}
+    {% if post.citation %}
+      <p class="archive__item-authors">{{ post.citation }}</p>
+    {% endif %}
+
     {% if post.collection == 'teaching' %}
       <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
     {% elsif post.collection == 'publications' and post.status == 'submitted' %}
@@ -55,15 +66,6 @@
       <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
     {% endif %}
 
-    {% comment %}
-      Custom simplified citation block:
-      - No "Recommended citation:" prefix, just the citation text itself
-      - No "Download Paper" link (title already links to the journal article via post.link)
-      - Only shows an "arXiv" fallback link if post.arxivurl is set
-    {% endcomment %}
-    {% if post.citation %}
-      <p>{{ post.citation }}</p>
-    {% endif %}
     {% if post.arxivurl %}
       <p><a href="{{ post.arxivurl }}">arXiv</a></p>
     {% endif %}
