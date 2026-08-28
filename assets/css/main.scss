@@ -44,6 +44,7 @@
 
 .archive__item-title {
   font-size: 14px !important;
+  font-weight: normal !important;
   margin-top: 0 !important;
   margin-bottom: 3px !important;
 }
@@ -66,8 +67,19 @@
   padding-top: 0 !important;
   margin-bottom: 5px !important;
   padding-bottom: 4px !important;
-  border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+  /*border-bottom: 1px solid rgba(255,255,255,0.15) !important;  */
+  border-bottom: none !important;
 }
+
+/* Year-separator line (in publications.html) - a fixed mid-grey
+   with enough contrast to show on both light and dark skins,
+   unlike a semi-transparent white/black which only works on one. */
+.pub-year-heading + hr {
+  border: none;
+  border-top: 1px solid #999999 !important;
+  margin: 4px 0 10px 0;
+}
+
 
 /* The actual outer wrapper around each entry is a SEPARATE element,
    <div class="list__item">, wrapping the <article class="archive__item">
