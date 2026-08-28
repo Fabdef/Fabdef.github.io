@@ -27,7 +27,7 @@
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i><a href="https://www.google.com/maps/search/?api=1&query=Edifici+ICN2+Campus+UAB+Bellaterra+08193+Barcelona+Spain" target="_blank" rel="noopener">{{ author.location }}</a></li>
       {% endif %}
       {% if author.employer %}
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i><a href="https://icn2.cat" target="_blank" rel="noopener">{{ author.employer }}</a></li>
+        <li class="author__desktop author__employer-wrap"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i><a href="https://icn2.cat" target="_blank" rel="noopener">{{ author.employer }}</a></li>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>

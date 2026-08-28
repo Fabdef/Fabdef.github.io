@@ -32,65 +32,65 @@
 ;
 
 /* ===================================================
-   Custom overrides - !important used deliberately.
-   The theme's compiled SCSS uses nested selectors that
-   produce higher specificity than plain class overrides
-   (documented, acknowledged issue in mmistakes/minimal-mistakes
-   #2852), so without !important these rules are silently
-   outranked regardless of file order.
+   Custom overrides - !important needed due to the
+   theme's own higher-specificity compiled selectors
+   (documented in mmistakes/minimal-mistakes#2852).
    =================================================== */
 
+/* Publication list - normal citation-list proportions.
+   No hardcoded color: the theme's own text color already
+   has correct contrast against its dark background; a
+   hardcoded dark grey (#444) was invisible on it. */
+
 .archive__item-title {
-  font-size: 7.4px !important;
+  font-size: 16px !important;
   margin-top: 0 !important;
-  margin-bottom: 1px !important;
+  margin-bottom: 3px !important;
 }
 
 .archive__item-authors {
-  font-size: 6.3px !important;
-  color: #444 !important;
+  font-size: 13px !important;
   margin-top: 0 !important;
-  margin-bottom: 1px !important;
+  margin-bottom: 3px !important;
+  opacity: 0.85;
 }
 
 .archive__item-excerpt {
-  font-size: 6.3px !important;
-  line-height: 1.2 !important;
-  margin-top: 1px !important;
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  margin-top: 3px !important;
 }
 
 .archive__item {
   margin-top: 0 !important;
   padding-top: 0 !important;
-  margin-bottom: 6px !important;
-  padding-bottom: 5px !important;
-  border-bottom: 1px solid #eaeaea !important;
+  margin-bottom: 14px !important;
+  padding-bottom: 12px !important;
+  border-bottom: 1px solid rgba(255,255,255,0.15) !important;
 }
 
 .archive__item p {
-  margin-top: 1px !important;
-  margin-bottom: 1px !important;
-  font-size: 6.3px !important;
+  margin-top: 3px !important;
+  margin-bottom: 3px !important;
+  font-size: 13px !important;
 }
 
+/* Sidebar bio (the short tagline under the name) - unchanged,
+   left to wrap normally as it always did. */
 .author__bio {
-  font-size: 14px !important;
-  line-height: 1.4 !important;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
-.author__urls-wrapper,
-.author__urls-wrapper .author__urls,
-.author__urls-wrapper .author__urls li,
-.author__urls-wrapper .author__urls li.author__desktop,
-.author__urls-wrapper .author__urls li a {
+/* Fix ONLY the employer line specifically - previous version
+   targeted every <li> in the sidebar list and broke their
+   individual stacked-line layout, merging everything into one
+   flowing block. This targets a single dedicated class instead. */
+.author__employer-wrap {
   white-space: normal !important;
   word-wrap: break-word !important;
   overflow-wrap: break-word !important;
-  word-break: break-word !important;
-  overflow: visible !important;
-  text-overflow: unset !important;
-  max-width: 100% !important;
-  width: auto !important;
+  display: list-item !important;
 }
 
 .page__content p,
