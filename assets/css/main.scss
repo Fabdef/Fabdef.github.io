@@ -70,6 +70,15 @@
   border-bottom: 1px solid #eaeaea;
 }
 
+/* 4b. Catch-all: the venue/date line in archive-single.html is a BARE <p> tag
+       with no class, so it inherits default browser/theme paragraph margins
+       (~1em top+bottom) untouched by any class-based rule above. Reset all
+       paragraphs inside an archive entry directly. */
+.archive__item p {
+  margin-top: 0.15em;
+  margin-bottom: 0.15em;
+}
+
 /* 5. Sidebar bio: smaller and slightly condensed, less "blog author card" */
 .author__bio {
   font-size: 0.9em;
