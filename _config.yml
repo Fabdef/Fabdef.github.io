@@ -5,7 +5,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # choose among: default, air, sunrise, mint, dirt, contrast.
-title                    : "Fabien Defrance"
+title                    : "Dr. Fabien Defrance"
 title_separator          : "-"
 name                     : &name "Fabien Defrance"
 description              : &description "Research Scientist - Quantum Sensing, Superconducting Devices, THz Instrumentation"
