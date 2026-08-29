@@ -5,7 +5,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # choose among: default, air, sunrise, mint, dirt, contrast.
-title                    : "About"
+title                    : "Fabien Defrance"
 title_separator          : "-"
 name                     : &name "Fabien Defrance Ph.D."
 description              : &description "Research Scientist - Quantum Sensing, Superconducting Devices, THz Instrumentation"
@@ -16,7 +16,7 @@ repository               : "Fabdef/Fabdef.github.io"
 # Site Author
 author:
   avatar             : "PXL_20250220_013719132.PORTRAIT~2.jpg"
-  name               : "Fabien Defrance"
+  name               : "Fabien Defrance Ph.D."
   pronouns           :
   bio                : "Research Scientist - Quantum Sensing, Superconducting Devices, THz Instrumentation"
   location           : "Barcelona, Spain"
