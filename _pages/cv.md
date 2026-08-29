@@ -46,31 +46,3 @@ Work experience
   * Programmed a Fourier Transform Spectrometer on an FPGA board (ROACH)
   * Built a thermally regulated IP camera to study ice formation on an ASIAA radiometer in Greenland
 
-Selected Funded Projects
-======
-* Low-Loss, Low-Noise Amorphous Silicon Dielectric for KID Capacitors and Superconducting Microstriplines — NASA APRA, $2M (Collaborator)
-* Broadband Microstrip-Coupled Titanium Nitride KIDs: A Key Detector Technology for CMB-S4 — US DOE, $500k (Collaborator)
-* Antenna/Microstrip-Coupled KIDs using Low-Loss Dielectrics — US DOE, $450k (Collaborator)
-* Stacked Wafer-Bonded Gradient Index Silicon Optics with Integral Antireflection Treatment — NASA APRA, $1.7M (Collaborator)
-* NEW-MUSIC: A Multiband Sub/Millimeter Camera for the Leighton Chajnantor Telescope — US NSF, $1.3M (Collaborator)
-
-Institutional Responsibilities & Service
-======
-* 2024 – IEEE Senior Member
-* 2023 – Panelist, NASA Astrophysics Research & Analysis (APRA) & Strategic Astrophysics Technology (SAT) proposal review
-* 2023 – Session Chair, Low Temperature Detectors Conference, Daejeon, South Korea (Session: Sensor Physics — TES, Bolometers for EM radiation)
-* 2018 – 2021: Postdoctoral Representative, Caltech Physics, Mathematics & Astronomy (PMA) division
-* 2018 – 2021: Postdoctoral Representative, Diversity, Equity & Inclusion (DEI) task force, Caltech PMA division
-* Regular reviewer: IEEE Trans. Antennas & Propagation, Applied Optics, Optics Express, J. Low Temp. Phys., IEEE Trans. THz Sci. & Technol., IEEE Trans. Applied Superconductivity, Scientific Reports
-* 2015 — Lucien Babonneau Award for Science Outreach, Astro-jeunes team, Academy of Sciences and Humanities of Toulouse
-
-Teaching & Supervision
-======
-* 2015–2016: Teaching Assistant, Paris Sorbonne University (C programming & numerical methods, 1st-year Master's students, 30 hours)
-* 2023–2025: J-M. Martin (Junior postdoctoral scholar) — beam mapping and Fourier transform spectrometer setups; KID resonator design
-* 2024–2025: S. Hempel-Costello (PhD student) — quasiparticle generation-recombination noise characterisation in KIDs
-* 2023–2024: J. Kim (Junior postdoctoral scholar) — spectral/spatial characterisation of KIDs
-* 2023–2024: S. Yu (PhD student) — TLS noise measurement in aluminium superconducting resonators
-* 2018–2022: T. Macioce (PhD student) — design and measurement of metamaterial antireflective structures
-* 2019: E. Mann (Undergraduate summer student) — electromagnetic propagation solver library
-* 2017: E. Padilla (Undergraduate summer student) — light propagation modelling in Python
