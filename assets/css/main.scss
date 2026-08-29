@@ -150,3 +150,18 @@
   padding-bottom: 4px;
   margin-top: 24px;
 }
+
+
+.page__footer-follow,
+.page__footer-copyright {
+  padding: 0.3em 0 !important;
+  margin: 0 !important;
+  font-size: 0.8em;
+}
+
+@media (prefers-color-scheme: light) {
+  .page__footer-copyright,
+  .page__footer-copyright a {
+    color: #333333 !important;
+  }
+}
