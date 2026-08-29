@@ -156,12 +156,9 @@
 .page__footer-copyright {
   padding: 0.1em 0 !important;
   margin: 0 !important;
-  font-size: 0.4em;
+  font-size: 0.7em;
 }
 
-@media (prefers-color-scheme: light) {
-  .page__footer-copyright,
-  .page__footer-copyright a {
-    color: #070707 !important;
-  }
+.page__footer {
+  color: #070707 !important;
 }
