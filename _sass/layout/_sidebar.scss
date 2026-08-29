@@ -210,6 +210,11 @@
 
 .author__bio {
   margin: 0;
+  font-size: 14px;
+
+  .bio-role {
+    font-size: 15px;
+  }
 
   @include breakpoint($large) {
     margin-top: 10px;

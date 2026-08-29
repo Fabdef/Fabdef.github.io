@@ -1,158 +1,119 @@
 ---
+
 ---
 
+
+
+/*
+
+ * This file controls what is imported from /_sass
+
+ */
+
+
+
 @import
+
     "vendor/breakpoint/breakpoint",
 
+
+
     "themes",
+
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
+
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
+
+
     "include/mixins",
+
     "vendor/susy/susy",
 
+
+
     "layout/reset",
+
     "layout/base",
 
+
+
     "include/utilities",
+
     "layout/tables",
+
     "layout/buttons",
+
     "layout/notices",
+
     "layout/masthead",
+
     "layout/navigation",
+
     "layout/footer",
+
     "syntax",
+
+
 
     "layout/forms",
 
+
+
     "layout/page",
+
     "layout/archive",
+
     "layout/sidebar",
+
     "layout/json_cv"
+
 ;
 
+
+
 /* ===================================================
-   Custom overrides - !important needed due to the
-   theme's own higher-specificity compiled selectors
-   (documented in mmistakes/minimal-mistakes#2852).
+
+   Custom overrides - ONLY for classes that don't exist
+
+   anywhere in the real theme (custom, single-purpose
+
+   classes I created). Everything else has been moved
+
+   into its real definition file directly.
+
    =================================================== */
 
-/* Publication list - normal citation-list proportions.
-   No hardcoded color: the theme's own text color already
-   has correct contrast against its dark background; a
-   hardcoded dark grey (#444) was invisible on it. */
-
-.archive__item-title {
-  font-size: 17px !important;
-  font-weight: normal !important;
-  margin-top: 0 !important;
-  margin-bottom: 1px !important;
-}
-
-.archive__item-title a {
-  text-decoration: none !important;
-}
-
-.archive__item-authors {
-  font-size: 16px !important;
-  margin-top: 0 !important;
-  margin-bottom: 3px !important;
-  opacity: 0.92;
-}
-
-.archive__item-excerpt {
-  font-size: 13px !important;
-  line-height: 1.4 !important;
-  margin-top: 3px !important;
-}
-
-.archive__item {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-  margin-bottom: 5px !important;
-  padding-bottom: 4px !important;
-  /*border-bottom: 1px solid rgba(255,255,255,0.15) !important;  */
-  border-bottom: none !important;
-}
-
-/* Year-separator line (in publications.html) - a fixed mid-grey
-   with enough contrast to show on both light and dark skins,
-   unlike a semi-transparent white/black which only works on one. */
-.pub-year-heading + hr {
-  border: none;
-  border-top: 1px solid #999999 !important;
-  margin: 4px 0 10px 0;
-}
 
 
-/* The actual outer wrapper around each entry is a SEPARATE element,
-   <div class="list__item">, wrapping the <article class="archive__item">
-   inside it (confirmed against the real theme source). Every previous
-   round only targeted archive__item - the inner element - and never
-   this outer one, which is very likely where the visible gap between
-   entries actually comes from. */
-.list__item {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.archive {
-  gap: 0 !important;
-}
-
-.archive__item p {
-  margin-top: 3px !important;
-  margin-bottom: 3px !important;
-  font-size: 15px !important;
-}
-
-/* Sidebar bio (the short tagline under the name) - unchanged,
-   left to wrap normally as it always did. */
-.author__bio {
-  font-size: 14px;
-  line-height: 1.4;
-}
-
-/* Fix ONLY the employer line specifically - previous version
-   targeted every <li> in the sidebar list and broke their
-   individual stacked-line layout, merging everything into one
-   flowing block. This targets a single dedicated class instead. */
 .author__employer-wrap {
+
   white-space: normal !important;
+
   word-wrap: break-word !important;
+
   overflow-wrap: break-word !important;
+
   display: list-item !important;
+
 }
 
-/* Keep icon + text inline on the same row for both employer and
-   location lines, regardless of text length or screen width */
+
+
 .author__urls-wrapper .author__urls li.author__desktop {
+
   display: flex !important;
+
   align-items: flex-start !important;
-  gap: 1px;
+
+  gap: 6px;
+
 }
+
 .author__urls-wrapper .author__urls li.author__desktop i {
+
   margin-top: 3px;
+
   flex-shrink: 0;
+
 }
-
-// .page__content p,
-// .page__content li {
-//   font-size: 15px;
-//   line-height: 1.6;
-// }
-
-.page__content h2 {
-  font-size: 20px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 4px;
-  margin-top: 24px;
-}
-
-
-// body {
-//   margin-bottom: 8px !important;
-// }
-

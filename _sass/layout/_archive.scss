@@ -41,11 +41,26 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
+  margin-top: 0;
   font-family: $sans-serif-narrow;
+  font-size: 17px;
 
   a + a {
     opacity: 0.5;
   }
+
+  a,
+  a:link,
+  a:visited,
+  a:hover {
+    color: var(--global-text-color);
+    text-decoration: none;
+  }
+}
+
+.archive__item-authors {
+  font-size: 16px;
+  margin: 0.1em 0;
 }
 
 /* remove border*/
@@ -59,7 +74,7 @@
 
 .archive__item-excerpt {
   margin-top: 0;
-  font-size: $type-size-6;
+  font-size: 16px;
 
   & + p {
     text-indent: 0;
@@ -90,6 +105,8 @@
    ========================================================================== */
 
 .list__item {
+  margin-bottom: 9px;
+
   @include breakpoint($medium) {
     padding-right: $right-sidebar-width-narrow;
   }
