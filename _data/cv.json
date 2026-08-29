@@ -5,7 +5,6 @@
     "email": "fabien.defrance@icn2.cat",
     "phone": "",
     "website": "https://icn2.cat",
-    "summary": "",
     "location": {
       "address": "",
       "postalCode": "",
@@ -66,7 +65,6 @@
       "position": "Senior Postdoctoral Researcher",
       "startDate": "2025",
       "endDate": "present",
-      "summary": "",
       "highlights": [
         "Demonstration of microwave-magnon coupling in Yttrium Iron Garnet (YIG) micro-disks at room temperature",
         "Modelling of YIG micro-disk magnetic resonance using Mumax3 software",
@@ -78,7 +76,6 @@
       "position": "Microwave Engineer",
       "startDate": "2022",
       "endDate": "2025",
-      "summary": "",
       "highlights": [
         "Supervision of students and junior postdoctoral scholars at Caltech, designing and characterising superconducting KIDs for the NEW-MUSIC instrument",
         "Design of membrane-based superconducting lumped-element band-pass filters for a heterodyne receiver at 450-610 GHz - the first membrane-based sub-millimeter superconducting filter-bank ever demonstrated",
@@ -90,7 +87,6 @@
       "position": "Research Scientist",
       "startDate": "2021",
       "endDate": "2022",
-      "summary": "",
       "highlights": [
         "Demonstrated hydrogenated amorphous silicon (a-Si:H) with the lowest reported two-level-system (TLS) noise in amorphous dielectrics",
         "Developed a backend homodyne readout system for TLS noise measurement in superconducting resonators",
@@ -102,7 +98,6 @@
       "position": "Postdoctoral Researcher",
       "startDate": "2017",
       "endDate": "2021",
-      "summary": "",
       "highlights": [
         "Developed a-Si:H with the lowest loss tangent reported in amorphous dielectrics (7x10^-6), enabling multi-layer architectures for KIDs and superconducting qubits",
         "Characterised titanium nitride KIDs; developed a fitting model for density-of-states smearing in disordered superconductors",
@@ -114,7 +109,6 @@
       "position": "Ph.D. Student & Postdoctoral Researcher",
       "startDate": "2012",
       "endDate": "2017",
-      "summary": "",
       "highlights": [
         "CIDRE instrument development - a 4-pixel heterodyne receiver at 2.7 THz to detect OH and HD molecular lines in the interstellar medium",
         "Design and test of a Martin-Puplett interferometer at 2.7 THz",
@@ -126,7 +120,6 @@
       "position": "Electronic Engineer",
       "startDate": "2011",
       "endDate": "2012",
-      "summary": "",
       "highlights": [
         "Programmed a Fourier Transform Spectrometer on an FPGA board (ROACH)",
         "Built a thermally regulated IP camera to study ice formation on an ASIAA radiometer in Greenland"
