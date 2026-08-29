@@ -1,152 +1,144 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Fabien Defrance",
+    "label": "Research Scientist - Quantum Sensing, Superconducting Devices, THz Instrumentation",
+    "email": "fabien.defrance@icn2.cat",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://icn2.cat",
+    "summary": "",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
+      "city": "Barcelona",
+      "countryCode": "ES",
       "region": ""
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/citations?user=iGsbyiEAAAAJ&hl=en"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0000-0002-3746-5296"
       },
       {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "network": "LinkedIn",
+        "username": "",
+        "url": "https://www.linkedin.com/in/fabien-defrance-24778028"
       }
     ]
   },
-  "work": [],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "Sorbonne University",
+      "area": "Ph.D. in Astronomy & Astrophysics",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
+      "endDate": "2015",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "University Clermont Auvergne, France",
+      "area": "M.S. in Physics and Radiation Technology",
       "studyType": "",
       "startDate": "",
-      "endDate": "2014",
+      "endDate": "2011",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "National Institute of Applied Sciences (INSA), Lyon, France",
+      "area": "M.S. in Electrical Engineering",
       "studyType": "",
       "startDate": "",
+      "endDate": "2010",
+      "gpa": null,
+      "courses": []
+    }
+  ],
+  "work": [
+    {
+      "company": "Catalan Institute of Nanoscience and Nanotechnology (ICN2), Barcelona, Spain",
+      "position": "Senior Postdoctoral Researcher",
+      "startDate": "2025",
+      "endDate": "present",
+      "summary": "",
+      "highlights": [
+        "Demonstration of microwave-magnon coupling in Yttrium Iron Garnet (YIG) micro-disks at room temperature",
+        "Modelling of YIG micro-disk magnetic resonance using Mumax3 software",
+        "Design of a superconducting circuit with ten multiplexed lumped-element LC resonators (1-2.5 GHz), with an inductor loop enabling coupling to YIG micro-disks"
+      ]
+    },
+    {
+      "company": "NASA Jet Propulsion Laboratory, Pasadena, CA",
+      "position": "Microwave Engineer",
+      "startDate": "2022",
+      "endDate": "2025",
+      "summary": "",
+      "highlights": [
+        "Supervision of students and junior postdoctoral scholars at Caltech, designing and characterising superconducting KIDs for the NEW-MUSIC instrument",
+        "Design of membrane-based superconducting lumped-element band-pass filters for a heterodyne receiver at 450-610 GHz - the first membrane-based sub-millimeter superconducting filter-bank ever demonstrated",
+        "Design of a 5-channel radiometer front-end at 90-182 GHz for INCUS, a NASA-funded mission to study tropical storms"
+      ]
+    },
+    {
+      "company": "Caltech, Pasadena, CA",
+      "position": "Research Scientist",
+      "startDate": "2021",
+      "endDate": "2022",
+      "summary": "",
+      "highlights": [
+        "Demonstrated hydrogenated amorphous silicon (a-Si:H) with the lowest reported two-level-system (TLS) noise in amorphous dielectrics",
+        "Developed a backend homodyne readout system for TLS noise measurement in superconducting resonators",
+        "Demonstrated the first flat gradient-index silicon-only lens with 3-layer anti-reflection metamaterial structures for 155-360 GHz, achieving 99% power transmission"
+      ]
+    },
+    {
+      "company": "Caltech, Pasadena, CA",
+      "position": "Postdoctoral Researcher",
+      "startDate": "2017",
+      "endDate": "2021",
+      "summary": "",
+      "highlights": [
+        "Developed a-Si:H with the lowest loss tangent reported in amorphous dielectrics (7x10^-6), enabling multi-layer architectures for KIDs and superconducting qubits",
+        "Characterised titanium nitride KIDs; developed a fitting model for density-of-states smearing in disordered superconductors",
+        "Developed 2-layer metamaterial anti-reflection structures for silicon optics via DRIE, achieving >99% power transmission within 187-317 GHz"
+      ]
+    },
+    {
+      "company": "Paris Observatory & French Space Agency (CNES), Paris, France",
+      "position": "Ph.D. Student & Postdoctoral Researcher",
+      "startDate": "2012",
+      "endDate": "2017",
+      "summary": "",
+      "highlights": [
+        "CIDRE instrument development - a 4-pixel heterodyne receiver at 2.7 THz to detect OH and HD molecular lines in the interstellar medium",
+        "Design and test of a Martin-Puplett interferometer at 2.7 THz",
+        "Developed a phase grating algorithm; demonstrated 4-way beam-splitting gratings at 610 GHz with state-of-the-art efficiency"
+      ]
+    },
+    {
+      "company": "Academia Sinica Institute of Astronomy and Astrophysics (ASIAA), Taipei, Taiwan",
+      "position": "Electronic Engineer",
+      "startDate": "2011",
       "endDate": "2012",
-      "gpa": null,
-      "courses": []
+      "summary": "",
+      "highlights": [
+        "Programmed a Fourier Transform Spectrometer on an FPGA board (ROACH)",
+        "Built a thermally regulated IP camera to study ice formation on an ASIAA radiometer in Greenland"
+      ]
     }
   ],
   "skills": [],
+  "publications": [],
+  "presentations": [],
+  "teaching": [],
+  "portfolio": [],
   "languages": [],
   "interests": [],
-  "references": [],
-  "publications": [
-    {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "references": []
 }
