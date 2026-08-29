@@ -212,9 +212,17 @@
   margin: 0;
   font-size: 14px;
 
+  .bio-name {
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--global-base-color);
+  }
+
   .bio-role {
+    display: block;
     font-size: 15px;
-    line-height: 1.5;
+    text-decoration: underline;
+    margin-bottom: 1.5em;
   }
 
   @include breakpoint($large) {

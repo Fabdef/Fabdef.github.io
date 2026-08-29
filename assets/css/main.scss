@@ -76,11 +76,7 @@
 
    Custom overrides - ONLY for classes that don't exist
 
-   anywhere in the real theme (custom, single-purpose
-
-   classes I created). Everything else has been moved
-
-   into its real definition file directly.
+   anywhere in the real theme.
 
    =================================================== */
 
@@ -100,20 +96,22 @@
 
 
 
-.author__urls-wrapper .author__urls li.author__desktop {
+/* Publications year divider - custom class, its real home.
 
-  display: flex !important;
+   Gap to the hr below reduced 20% from the original 1.5em
 
-  align-items: flex-start !important;
+   total (h2's generic 0.5em bottom margin + hr's 1em top
 
-  gap: 6px;
+   margin) to 1.2em total: hr's share becomes 0.7em. */
 
-}
+.pub-year-heading + hr {
 
-.author__urls-wrapper .author__urls li.author__desktop i {
+  border: none;
 
-  margin-top: 3px;
+  border-top: 1px solid var(--global-text-color-light);
 
-  flex-shrink: 0;
+  margin-top: 0.7em;
+
+  margin-bottom: 10px;
 
 }
