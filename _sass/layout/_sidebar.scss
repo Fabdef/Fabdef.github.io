@@ -212,13 +212,12 @@
 
 .author__bio {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.8333rem; /* 15px at 18px root, scales */
 
   .bio-role {
     display: block;
-    font-size: 16px;
-    // text-transform: uppercase;
-    text-decoration: italic;
+    font-size: 15px;
+    text-transform: uppercase;
     margin-bottom: 1.5em;
   }
 

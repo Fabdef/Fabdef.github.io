@@ -56,7 +56,7 @@
   }
 
   p, li, dl {
-    font-size: 1em;
+    font-size: 0.9444rem; /* 17px at 18px root (medium+ breakpoint), scales proportionally */
   }
 
   /* paragraph indents */

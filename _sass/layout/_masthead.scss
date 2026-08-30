@@ -59,6 +59,7 @@
   display: block;
   list-style-type: none;
   white-space: nowrap;
+  font-size: 1.0556rem; /* 19px at 18px root (+1 over inherited default), scales */
 
   &--lg {
     padding-right: 2em;
