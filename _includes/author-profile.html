@@ -55,13 +55,3 @@
     </ul>
   </div>
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  document.querySelectorAll(".obfuscated-email").forEach(function (link) {
-    var user = link.getAttribute("data-user");
-    var domain = link.getAttribute("data-domain");
-    link.setAttribute("href", "mailto:" + user + "@" + domain);
-  });
-});
-</script>
