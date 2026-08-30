@@ -32,7 +32,7 @@
   },
   "education": [
     {
-      "institution": "Sorbonne University",
+      "institution": "Sorbonne University, Paris, France",
       "area": "Ph.D. in Astronomy & Astrophysics",
       "studyType": "",
       "startDate": "",
@@ -41,7 +41,7 @@
       "courses": []
     },
     {
-      "institution": "University Clermont Auvergne, France",
+      "institution": "University Clermont Auvergne, Clermont-Ferrand, France",
       "area": "M.S. in Physics and Radiation Technology",
       "studyType": "",
       "startDate": "",
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "company": "NASA Jet Propulsion Laboratory, Pasadena, CA",
+      "company": "NASA Jet Propulsion Laboratory, Pasadena, CA, USA",
       "position": "Microwave Engineer",
       "startDate": "2022",
       "endDate": "2025",
@@ -83,7 +83,7 @@
       ]
     },
     {
-      "company": "Caltech, Pasadena, CA",
+      "company": "Caltech, Pasadena, CA, USA",
       "position": "Research Scientist",
       "startDate": "2021",
       "endDate": "2022",
@@ -94,7 +94,7 @@
       ]
     },
     {
-      "company": "Caltech, Pasadena, CA",
+      "company": "Caltech, Pasadena, CA, USA",
       "position": "Postdoctoral Researcher",
       "startDate": "2017",
       "endDate": "2021",

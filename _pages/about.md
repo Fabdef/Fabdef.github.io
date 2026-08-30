@@ -14,5 +14,5 @@ In 2022, he obtained a permanent position as microwave engineer at NASA's Jet Pr
 
 Since November 2025, he has joined the Catalan Institute of Nanoscience and Nanotechnology (ICN2) in Spain, applying his experience in superconducting resonators to develop a superconducting quantum transducer capable of converting microwave photons into optical photons — a key enabling technology for distributed quantum computer architectures.
 
-His CV and a full list of publications can be found on the [CV](/cv-json/) and [Publications](/publications/) pages.
+A CV and selected publication list can be found on the [CV](/cv-json/) and [Publications](/publications/) pages.
  <!-- [Talks](/talks/) pages. -->
