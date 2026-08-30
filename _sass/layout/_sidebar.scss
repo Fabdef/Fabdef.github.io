@@ -210,13 +210,8 @@
 
 .author__bio {
   margin: 0;
+  padding-left: 2.25em;
   font-size: 14px;
-
-  .bio-name {
-    font-weight: normal;
-    font-size: 16px;
-    color: var(--global-base-color);
-  }
 
   .bio-role {
     display: block;

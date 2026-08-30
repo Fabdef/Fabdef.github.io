@@ -1,117 +1,58 @@
 ---
-
 ---
 
-
-
 /*
-
  * This file controls what is imported from /_sass
-
  */
 
-
-
 @import
-
     "vendor/breakpoint/breakpoint",
 
-
-
     "themes",
-
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
-
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
 
-
-
     "include/mixins",
-
     "vendor/susy/susy",
 
-
-
     "layout/reset",
-
     "layout/base",
 
-
-
     "include/utilities",
-
     "layout/tables",
-
     "layout/buttons",
-
     "layout/notices",
-
     "layout/masthead",
-
     "layout/navigation",
-
     "layout/footer",
-
     "syntax",
-
-
 
     "layout/forms",
 
-
-
     "layout/page",
-
     "layout/archive",
-
     "layout/sidebar",
-
     "layout/json_cv"
-
 ;
 
-
-
 /* ===================================================
-
    Custom overrides - ONLY for classes that don't exist
-
    anywhere in the real theme.
-
    =================================================== */
 
-
-
 .author__employer-wrap {
-
   white-space: normal !important;
-
   word-wrap: break-word !important;
-
   overflow-wrap: break-word !important;
-
-  display: list-item !important;
-
 }
 
-
-
 /* Publications year divider - custom class, its real home.
-
    Gap to the hr below reduced 20% from the original 1.5em
-
    total (h2's generic 0.5em bottom margin + hr's 1em top
-
    margin) to 1.2em total: hr's share becomes 0.7em. */
-
 .pub-year-heading + hr {
-
   border: none;
-
   border-top: 1px solid var(--global-text-color-light);
-
-  margin-top: 0.7em;
-
+  margin-top: 0.8em;
   margin-bottom: 10px;
-
 }
