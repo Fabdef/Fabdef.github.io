@@ -218,12 +218,12 @@
     display: block;
     font-size: 1.0556rem;
     font-style: italic;
-    margin-bottom: 0.4em;
+    margin-bottom: 1.5em;
   }
 
   @include breakpoint($large) {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 }
 
@@ -256,28 +256,19 @@
 }
 
 .author__urls {
-  display: none;
-  position: absolute;
-  right: 0;
-  margin-top: 15px;
-  padding: 10px;
+  /* Was hidden below 925px by default, meant to be revealed by a
+     "Follow" toggle button that was intentionally removed - always
+     show it now instead, on every screen size, since there's no
+     button left to reveal it otherwise. */
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
   list-style-type: none;
-  border: 1px solid var(--global-border-color);
-  border-radius: $border-radius;
-  background: var(--global-bg-color);
-  z-index: -1;
-  box-shadow: 0 0 10px rgba(#000, 0.25);
   cursor: default;
-
-  @include breakpoint($large) {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
 
   &:before {
     display: block;
@@ -338,7 +329,7 @@
    (0.75em, ~13.5px at 18px root). +1 target = 14.5px, scales. */
 .author__urls li {
   font-size: 0.8056rem;
-  margin-bottom: 1.0px !important;
+  margin-bottom: 4.7px !important;
 }
 
 /* Slightly wider sidebar column to accommodate the larger text
@@ -346,4 +337,13 @@
 .author__content,
 .author__urls-wrapper {
   max-width: 220px;
+}
+
+/* On small screens, only show the full author sidebar on the About
+   page ('/') - hide it entirely on other pages (Publications, CV),
+   since people look for bio/contact info specifically on About. */
+@media screen and (max-width: 599px) {
+  .sidebar--not-about {
+    display: none;
+  }
 }
