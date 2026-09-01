@@ -14,7 +14,7 @@
   margin-bottom: 1em;
 
   @media (orientation: portrait) {
-    margin-top: 1em;
+    margin-top: 0.2em;
   }
 
   @media screen and (min-width: $sidebar-screen-min-width) {
@@ -218,12 +218,12 @@
     display: block;
     font-size: 1.0556rem;
     font-style: italic;
-    margin-bottom: 1.5em;
+    margin-bottom: 0.3em;
   }
 
   @include breakpoint($large) {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 }
 
@@ -329,7 +329,7 @@
    (0.75em, ~13.5px at 18px root). +1 target = 14.5px, scales. */
 .author__urls li {
   font-size: 0.8056rem;
-  margin-bottom: 4.7px !important;
+  margin-bottom: 1.0px !important;
 }
 
 /* Slightly wider sidebar column to accommodate the larger text
