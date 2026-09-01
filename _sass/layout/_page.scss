@@ -17,7 +17,7 @@
 }
 
 .page {
-  margin-top: 3em;
+  margin-top: 2em;
   @include breakpoint($large) {
     @include span(10 of 12 last);
     @include prefix(0.5 of 12);
@@ -58,6 +58,7 @@
 
   p, li, dl {
     font-size: 0.9444rem; /* 17px at 18px root (medium+ breakpoint), scales proportionally */
+    text-align: justify;
   }
 
   /* paragraph indents */
